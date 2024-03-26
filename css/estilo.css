@@ -1,0 +1,18 @@
+body {
+    background-color: gray;
+}
+.img-logo {
+    border-radius: 35%;
+}
+div.container.mt-5 {
+    background-color: rgba(227, 227, 227, 0.5);
+    border-radius: 20px;
+    padding-bottom: 50px;
+    padding-top: 30px; 
+    margin-bottom: 3rem !important;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        flex-direction: row-reverse;
+    }
+}
