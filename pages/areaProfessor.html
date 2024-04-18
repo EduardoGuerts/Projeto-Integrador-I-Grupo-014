@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Professor</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#"><img src="./img/geoteca.jpg" alt="" width="100px" class="img-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./gabarito.html">Gabarito</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid text-center bg-light">
+        <div class="container">
+            <h1 class="display-4">Área do Professor</h1>
+            <p class="lead">Aqui você pode verificar as respostas dos alunos.</p>
+        </div>
+    </div>
+    <!-- Respostas dos formularios dos alunos -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <!-- Visualizar as respostas dos alunos. -->
+                <ol>
+                    <li>
+                        <a href="detalhes_aluno1.html" class="btn btn-primary d-flex justify-content-center mb-3">
+                            Número da chamada: 1, Série: 8A
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detalhes_aluno2.html" class="btn btn-primary d-flex justify-content-center mb-3">
+                            Número da chamada: 2, Série: 8A
+                        </a>
+                    </li>
+                    <!-- Adicione mais itens conforme necessário -->
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap e dependências JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
