@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
+
 <body style="background-color: rgba(227, 227, 227, 0.5);">
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid text-center p-3 mb-2 bg-primary text-white">
@@ -29,41 +31,51 @@
                             <div class="form-group">
                                 <label for="input_1">1. Qual é o maior país do mundo em área terrestre?</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP1" id="input_1D" value="Rússia" checked>
-                                    <label class="form-check-label" for="input_1D">Rússia</label>
+                                    <input class="form-check-input" type="radio" name="alternativaP1" id="input_1D" checked>
+                                    <label class="form-check-label text-success" for="input_1D">Rússia</label>
                                 </div>
                             </div>
+                            <br>
                             <!-- Pergunta 2 -->
                             <div class="form-group">
                                 <label for="input_2">2. Qual é o rio mais longo do mundo?</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP2" id="input_2B" value="Rio Nilo" checked>
-                                    <label class="form-check-label" for="input_2B">Rio Nilo</label>
+                                    <input class="form-check-input" type="radio" name="alternativaP2" id="input_2B" checked>
+                                    <label class="form-check-label text-success" for="input_2B">Rio Nilo</label>
                                 </div>
                             </div>
+                            <br>
                             <!-- Pergunta 3 -->
                             <div class="form-group">
                                 <label for="input_3">3. Como os povos se orientavam no passado?</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP3" id="input_3A" value="Pelos astros" checked>
-                                    <label class="form-check-label" for="input_3A">Pelos astros</label>
+                                    <input class="form-check-input" type="radio" name="alternativaP3" id="input_3A" checked>
+                                    <label class="form-check-label text-success" for="input_3A">Pelos astros</label>
                                 </div>
                             </div>
+                            <br>
                             <!-- Pergunta 4 -->
                             <div class="form-group">
                                 <label for="input_4">4. O que é a Cartografia?</label>
-                                <textarea class="form-control" id="input_4" name="respostaP4" rows="3" required>A Cartografia é a ciência de representação gráfica da superfície terrestre, incluindo aspectos físicos, culturais e artificiais.</textarea>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="alternativaP4" id="input_4B" checked>
+                                    <label class="form-check-label text-success" for="input_4B">É a ciência que representa
+                                        graficamente uma área geográfica ou uma superfície plana.</label>
+                                </div>
                             </div>
+                            <br>
                             <!-- Pergunta 5 -->
                             <div class="form-group">
-                                <label for="input_5">5. Explique o Tratado de Tordesilhas do mapa:</label>
-                                <br>
-                                <img src="../img/mapa.jpg" alt="" width="35%">
-                                <br>
-                                <br>
-                                <textarea class="form-control" id="input_5" name="respostaP5" rows="3" required>O Tratado de Tordesilhas foi um acordo entre Portugal e Espanha, mediado pelo Papa, que dividiu as terras do "Novo Mundo" entre eles. A linha de demarcação passava a 370 léguas a oeste das ilhas de Cabo Verde. As terras a leste pertenceriam a Portugal e as terras a oeste à Espanha.</textarea>
+                                <label for="input_5">5. O que foi o Tratado de Tordesilhas?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="alternativaP5" id="input_5A" checked>
+                                    <label class="form-check-label text-success" for="input_5A">Foi um acordo entre Portugal e
+                                        Espanha, celebrado em 1494, que dividiu o novo mundo através de um meridiano a
+                                        370 léguas a oeste do Arquipélago de Cabo Verde.</label>
+                                </div>
                             </div>
-                        </fieldset>                        
+                            <br>
+                        </fieldset>
                     </div>
                 </form>
                 <!-- Botão Voltar -->
@@ -78,4 +90,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>

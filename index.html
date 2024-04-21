@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <!-- CSS personalizado -->
-    <link rel="stylesheet" href="./css/estilo.css">
+    <!-- CSS Interno -->
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .img-logo {
+            border-radius: 35%;
+        }
+
+        div.container.mt-5 {
+            background-color: rgba(227, 227, 227, 0.5);
+            border-radius: 20px;
+            padding-bottom: 50px;
+            padding-top: 30px;
+            margin-bottom: 3rem !important;
+        }
+
+        @media (min-width: 992px) {
+            .navbar-expand-lg .navbar-collapse {
+                flex-direction: row-reverse;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html"><img src="./img/geoteca.jpg" alt="" width="100px" class="img-logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"><img src="./img/geoteca.jpg" alt="" width="100px"
+                class="img-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,7 +59,8 @@
     <div class="jumbotron jumbotron-fluid text-center bg-light">
         <div class="container">
             <h1 class="display-4">Bem-vindo à Geoteca</h1>
-            <p class="lead">Insira seu número de chamada e sua série. Após responder a ficha de estudo, clique no botão ‘Enviar’.</p>
+            <p class="lead">Insira seu número de chamada e sua série. Após responder a ficha de estudo, clique no botão
+                ‘Enviar’.</p>
         </div>
     </div>
     <!-- Formulário -->
@@ -43,11 +70,13 @@
                 <form method="post" class="needs-validation" novalidate>
                     <div class="form-group">
                         <label for="numeroInput">Número da chamada:</label>
-                        <input type="text" class="form-control" id="numeroInput" name="numeroChamada" required pattern="^\d{1,3}$">
+                        <input type="text" class="form-control" id="numeroInput" name="numeroChamada" required
+                            pattern="^\d{1,3}$">
                     </div>
                     <div class="form-group">
                         <label for="serieInput">Série:</label>
-                        <input type="text" class="form-control" id="serieInput" name="serieEscola" placeholder="ex: 7A" required pattern="^\d{1,2}[A-Z]$">
+                        <input type="text" class="form-control" id="serieInput" name="serieEscola" placeholder="ex: 7A"
+                            required pattern="^\d{1,2}[A-Z]$">
                     </div>
                     <!-- Questionário -->
                     <div class="form-group">
@@ -57,19 +86,23 @@
                             <div class="form-group">
                                 <label for="input_1">1. Qual é o maior país do mundo em área terrestre?</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP1" id="input_1A" value="Brasil" required>
+                                    <input class="form-check-input" type="radio" name="alternativaP1" id="input_1A"
+                                        value="1A" required>
                                     <label class="form-check-label" for="input_1A">Brasil</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP1" id="input_1B" value="Estados Unidos">
+                                    <input class="form-check-input" type="radio" name="alternativaP1" id="input_1B"
+                                        value="1B">
                                     <label class="form-check-label" for="input_1B">Estados Unidos</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP1" id="input_1C" value="China">
+                                    <input class="form-check-input" type="radio" name="alternativaP1" id="input_1C"
+                                        value="1C">
                                     <label class="form-check-label" for="input_1C">China</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP1" id="input_1D" value="Rússia">
+                                    <input class="form-check-input" type="radio" name="alternativaP1" id="input_1D"
+                                        value="1D">
                                     <label class="form-check-label" for="input_1D">Rússia</label>
                                 </div>
                             </div>
@@ -77,19 +110,23 @@
                             <div class="form-group">
                                 <label for="input_2">2. Qual é o rio mais longo do mundo?</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP2" id="input_2A" value="Rio Amazonas" required>
+                                    <input class="form-check-input" type="radio" name="alternativaP2" id="input_2A"
+                                        value="2A" required>
                                     <label class="form-check-label" for="input_2A">Rio Amazonas</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP2" id="input_2B" value="Rio Nilo">
+                                    <input class="form-check-input" type="radio" name="alternativaP2" id="input_2B"
+                                        value="2B">
                                     <label class="form-check-label" for="input_2B">Rio Nilo</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP2" id="input_2C" value="Rio Yangtzé">
+                                    <input class="form-check-input" type="radio" name="alternativaP2" id="input_2C"
+                                        value="2C">
                                     <label class="form-check-label" for="input_2C">Rio Yangtzé</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP2" id="input_2D" value="Rio Mississippi">
+                                    <input class="form-check-input" type="radio" name="alternativaP2" id="input_2D"
+                                        value="2D">
                                     <label class="form-check-label" for="input_2D">Rio Mississippi</label>
                                 </div>
                             </div>
@@ -97,39 +134,87 @@
                             <div class="form-group">
                                 <label for="input_3">3. Como os povos se orientavam no passado?</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP3" id="input_3A" value="Sydney" required>
+                                    <input class="form-check-input" type="radio" name="alternativaP3" id="input_3A"
+                                        value="3A" required>
                                     <label class="form-check-label" for="input_3A">Pelos astros</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP3" id="input_3B" value="Melbourne">
+                                    <input class="form-check-input" type="radio" name="alternativaP3" id="input_3B"
+                                        value="3B">
                                     <label class="form-check-label" for="input_3B">Pelo clima</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP3" id="input_3C" value="Perth">
+                                    <input class="form-check-input" type="radio" name="alternativaP3" id="input_3C"
+                                        value="3C">
                                     <label class="form-check-label" for="input_3C">Pelas placas tectônicas</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="alternativaP3" id="input_3D" value="Canberra">
+                                    <input class="form-check-input" type="radio" name="alternativaP3" id="input_3D"
+                                        value="3D">
                                     <label class="form-check-label" for="input_3D">Por GPS</label>
                                 </div>
                             </div>
                             <!-- Pergunta 4 -->
                             <div class="form-group">
                                 <label for="input_4">4. O que é a Cartografia?</label>
-                                <textarea class="form-control" id="input_4" name="respostaP4" rows="3" required></textarea>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="alternativaP4" id="input_4A"
+                                        value="4A" required>
+                                    <label class="form-check-label" for="input_4A">É a ciência que estuda os
+                                        planetas.</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="alternativaP4" id="input_4B"
+                                        value="4B">
+                                    <label class="form-check-label" for="input_4B">É a ciência que representa
+                                        graficamente uma área geográfica ou uma superfície plana.</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="alternativaP4" id="input_4C"
+                                        value="4C">
+                                    <label class="form-check-label" for="input_4C">É a ciência que estuda os
+                                        animais.</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="alternativaP4" id="input_4D"
+                                        value="4D">
+                                    <label class="form-check-label" for="input_4D">É a ciência que estuda as
+                                        plantas.</label>
+                                </div>
                             </div>
                             <!-- Pergunta 5 -->
                             <div class="form-group">
-                                <label for="input_5">5. Explique o Tratado de Tordesilhas do mapa:</label>
-                                <br>
-                                <img src="./img/mapa.jpg" alt="" width="35%">
-                                <br>
-                                <br>
-                                <textarea class="form-control" id="input_5" name="respostaP5" rows="3" required></textarea>
+                                <label for="input_5">5. O que foi o Tratado de Tordesilhas?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="alternativaP5" id="input_5A"
+                                        value="5A" required>
+                                    <label class="form-check-label" for="input_5A">Foi um acordo entre Portugal e
+                                        Espanha, celebrado em 1494, que dividiu o novo mundo através de um meridiano a
+                                        370 léguas a oeste do Arquipélago de Cabo Verde.</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="alternativaP5" id="input_5B"
+                                        value="5B">
+                                    <label class="form-check-label" for="input_5B">Foi um acordo entre França e
+                                        Inglaterra para dividir a África.</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="alternativaP5" id="input_5C"
+                                        value="5C">
+                                    <label class="form-check-label" for="input_5C">Foi um acordo entre Estados Unidos e
+                                        Rússia para dividir a Antártica.</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="alternativaP5" id="input_5D"
+                                        value="5D">
+                                    <label class="form-check-label" for="input_5D">Foi um acordo entre China e Índia
+                                        para dividir a Austrália.</label>
+                                </div>
                             </div>
-                        </fieldset>                        
+                        </fieldset>
                     </div>
-                    <button type="submit" class="btn btn-success btn-block">Enviar Respostas <i class="fas fa-paper-plane"></i></button>
+                    <button type="submit" class="btn btn-success btn-block">Enviar Respostas <i
+                            class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
         </div>
@@ -139,6 +224,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Script de validação antes de enviar o questionario -->
-    <script src="./js/script.js" ></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
